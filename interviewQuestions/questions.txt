@@ -1,0 +1,54 @@
+1. What is Doctype
+2. What are paired tags and unbpaired tags give some examples?
+3. What is Block Level and What is Inline and describe them? 
+   (Inline: b tag, string tag etc...)
+4. What are the type of headings?
+5. Diff b/w b tag and strong tag?
+   b{
+        ont-weight: bold;
+   }
+   strong {
+        font-weight: bold;
+    }
+    Note: strong tag is best for screen readers and which give more importance
+6. What are Schematic Tags?
+   The Schematic Tags have special meaning
+   Eg: <header> </header> tag and  <footer> </footer> and <strong> </strong> tag
+   article tag, figure tag, del tag etc...
+7. Diff b/w s tag and strike tag and del tag?
+   strike {
+    text-decoration: line-through;
+   }
+   s{
+    text-decoration: line-through;
+    }
+   del {
+     text-decoration: line-through;
+   }
+8. Diff b/w em tag and i tag?
+    em {
+        font-style: italic;
+    }
+    i {
+        font-style: italic;
+    }
+Note: em tag is best for screen readers and which give more importance
+9. Diff b/w span tag and mark tag
+
+Note: Both the tags are used for higlights, span tag also can be in links
+span tag used for highlighting text and we have to style it explicity
+
+10. Diff b/w u tag and ins tag
+    u {
+        text-decoration: underline;
+    }
+    ins {
+        text-decoration: underline;
+    }
+11. Diff b/w small tag and big tag
+    small {
+        font-size: smaller;
+    }
+    big {
+        font-size: larger;
+    }
