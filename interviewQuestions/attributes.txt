@@ -1,0 +1,17 @@
+1. what is bdo tag?
+Note: bdo tag is bi-directional tag, this tag contains attributes 
+      lie dir="rtl" and dir="ltr"
+
+2. what is abbr tag and acronym tag?
+Note:
+    schemtaic tag
+    abbr[title] {
+        text-decoration: underline dotted;
+    }
+    non-schemtaic tag
+    acronym[title] {
+        text-decoration: underline dotted;
+    }
+3. what is image tag and figure tag (figute caption)?
+   src="" alt=""
+   Note: we can load images in two ways they are like relative and absolute
