@@ -6,7 +6,7 @@
     <style>
         body{
             border-radius: 2px solid black;
-            background-color: rgb(162, 208, 208);
+            background-color: rgb(90, 93, 93);
         }
         nav{
             text-align:right;
@@ -15,41 +15,74 @@
             color: red;
             font-size: 40px;
             text-align: center;
+            background-color: beige;
+            text-shadow: 2px 5px #131212
         }
-        ul{
-            color:black;
-            font-size: 20px;
-            background-color:bisque; 
-            padding: 10px;
-            margin: 2px;
-        }
+        
         a{
             gap: 15px;
             margin:10px;
+            color: white;
         }
+        main{
+            color:rgb(241, 235, 235)
+        }
+        footer{
+            background-color: bisque;
+        }
+       
     </style>
 </head>
 <body>
-    <nav>
-        <h1>New Cars</h1>
-        <ul>
-           <a href="">Home</a>
-           <a href="">Service</a>
-           <a href="">AboutUs</a>
-           <a href="">Contact Us</a>
-        </ul>
-    </nav>
 
-    <details>
-        <summary>Mobiles</summary>
-        <ul>
-            <li>M1</li>
-            <li>M2</li>
-            <li>M3</li>
-            <li>M4</li>
-            <li>M5</li>
-        </ul>
+    <header>
+        <nav>
+            <h1>Take Cars</h1>
+            <ul type="none">
+               <a href="">Home</a>
+               <a href="">Service</a>
+               <a href="">Products</a>
+               <a href="">Contact Us</a>
+            </ul>
+        </nav>
+    </header>
+    <hr id="hu">
+
+    <main>
+        <details open>
+            <summary>Mobiles</summary>
+            <ul type="none">
+                <li><a href="./mobiles/vivo.html">Vivo</a></li>
+                <li><a href="./mobiles/oppo.html">Oppo</a></li>
+                <li><a href="">Samsung</a></li>
+
+                
+      </details>
+        
+      <details open>
+        <summary>Laptops</summary>
+        <ul type="none">
+            <li><a href="">Hp</a></li>
+            <li><a href="">Dell</a></li>
+            <li><a href="">Lenovo</a></li>
+            
   </details>
+    
+  <details open>
+    <summary>Electronics</summary>
+    <ul type="none">
+        <li><a href="">LG</a></li>
+        <li><a href="">Samsung</a></li>
+        <li><a href="">Sony</a></li>
+
+        
+</details>
+
+    </main>
+
+    <footer>
+        <p style="text-align: center";>&copy E products</p>
+    </footer>
     
 </body>
 </html>
