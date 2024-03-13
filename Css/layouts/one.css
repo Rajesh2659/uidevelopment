@@ -1,0 +1,40 @@
+/* -------------- Nav css -------------*/
+
+.first{
+    border: 2px solid rgb(28, 28, 29);
+    padding: 10px;
+    margin-right:  10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    height: 50px;
+    background-color: black;
+}
+.navbar{
+    border: 2px solid black;
+    padding: 10px;
+    margin-right:  10px;
+    height:30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+/* -------------- main -------------*/
+
+.second{
+    border: 2px solid blue;
+    padding: 10px;
+    margin-right:  10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    height: 270px;
+}
+.barmain{
+    border: 2px solid black;
+    padding: 10px;
+    margin-right:  10px;
+    height:250px;
+}
+
+

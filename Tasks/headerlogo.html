@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 25px;
+        grid-area: auto;
+        position: relative;
+        left: 150px;
+        bottom: 50px;
+      }
+      .onediv {
+        border: 2px solid gray;
+        background-color: rgb(146, 182, 220);
+        height: 150px;
+      }
+      img {
+        position: relative;
+        top: 35px;
+        left: 10px;
+        background-size: cover;
+        font-size: 50px;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="onediv">
+      <nav id="navbar" class="">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="logo"
+              ><img
+                width="150px"
+                height="auto"
+                src="./we-alert-high-resolution-logo.png"
+            /></a>
+          </div>
+
+          <!-- Navbar Links -->
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#services">Services</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+      </div>
+    </div>
+  </body>
+</html>

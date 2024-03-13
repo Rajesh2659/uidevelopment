@@ -1,0 +1,31 @@
+body{
+    background-image: url("./3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item{
+
+    margin-right: 15px;
+}
+
+.text-white{
+    color: white;
+}
+
+h1, h3{
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.d-flex{
+    margin-left: 10px;
+    margin-top: 30px;
+}

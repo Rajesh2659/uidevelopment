@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 30px;
+        width: 300px;
+      }
+      .image {
+        border: 2px solid whitesmoke;
+        flex: 0 100%; /* 2 items in a row */
+        box-sizing: border-box;
+        padding: 5px;
+      }
+
+      /* @media only screen and (max-width: 823px) {
+        .image {
+          flex: 0 0 50%; /* Set to 50% width when screen width is 768px or less
+        }
+
+      } */
+      @media only screen and (max-width: 320px) {
+        .image {
+          flex: 0 0 100%; /* Set to 50% width when screen width is 768px or less */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+      <div class="image"><img src="./img.jpg" alt="" /></div>
+    </div>
+    <div class="container">
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+    </div>
+    <div class="container">
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+      <div class="image"><img src="./img.jpg" width="200px" alt="" /></div>
+    </div>
+  </body>
+</html>

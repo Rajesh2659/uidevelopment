@@ -1,0 +1,184 @@
+/*----------------------------------- Header --------------------------------------------*/
+.sec1{
+    border: 2px solid whitesmoke;
+    padding: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    background-color:white;
+    height: 45px;
+    position: fixed;
+     top:0;
+
+
+}
+#fav{
+    position: relative;
+    bottom: 18px;
+    left: 10px;
+    width: 30px;
+    height: 29px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.myn{
+    position: relative;
+    top: 10px;
+    border: 2px solid white;
+    padding:5px;
+    display: flex;
+    margin-left: 36px;
+    background-color:white;
+    border-radius: 17px ;
+    font-size: 15px;
+
+    font-weight: bold;
+
+}
+.tra{
+    position: relative;
+    bottom: 5px;
+    border: 2px solid white;
+    padding:9px;
+    display: flex;
+    margin-left: 40px;
+    background-color:white;
+    font-weight: bold;
+
+}
+.home{
+    width: 450px;
+    height:55px;
+    position: relative;
+    padding: 5px;
+    top: 12px;
+    left: 10px;
+    border-radius: 10px;
+    height: 30px;
+    background-color:#f5f5f5;
+    text-decoration: none;
+    border: 3px solid whitesmoke;
+    font-size: 15px;
+}
+body{
+    border-radius: 10px solid white;
+}
+.lay{
+position: relative;
+top: 22px;
+right:30px;
+font-size: 9px;
+font-weight: bold;
+}
+#size{
+    color: black;
+}
+.jan{
+    
+    position: relative;
+    bottom: 11px;
+    width: 45px;
+    height: 35px;
+}
+a{
+    text-decoration: none;
+}
+
+/*----------------------------------   Main      --------------------------------------*/
+.new1{
+    width:1510px;
+    height:600px;
+    object-fit:fill;
+}
+.new:hover{
+    background-color: rgb(18, 195, 195);
+}
+.pic1{
+    width: 350px;
+    height: 350px;
+    float: left;
+    padding: 5px;
+    border:5px solid white;
+   
+}
+.pic1:hover{  
+background-color: whitesmoke;
+}
+h1{
+    position: relative;
+    left: 100px;
+    font-size: 30px;
+}
+.btn{
+    text-align: center;
+    font-size: 20px;
+}
+/*--------------   Fotter  ----------------------------------*/
+.f1,
+.d1 {
+  margin: 1px;
+  padding: 10px;
+  display: flex;
+  height: 100px;
+}
+.d1 {
+    padding: 60px;
+  flex: 1;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.f1 {
+  height: 160px;
+  text-align: right;
+  position: relative;
+  top: 3000px;
+  right:1400px;
+  display: flex;
+
+}
+.s1 {
+  border: 2px solid black;
+}
+b {
+  color: white;
+}
+li{
+    list-style-type: none ;
+    text-align: left;
+    padding: 5px;
+}
+.raj{
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.gpy{
+    position: relative;
+    bottom: 25px;
+    right: 17px;
+    width: 150px;
+    height: 120px;
+}
+.apl{
+    position: relative;
+    bottom: 148px;
+    left: 100px;
+    width: 115px;
+    height: 120px;
+}
+#touch{
+    position: relative;
+    bottom: 176px;
+}
+.sir{
+    position: relative;
+    bottom: 160px;
+    right: 25px;
+    letter-spacing: 3px;
+    color: rgb(133, 131, 131);
+}
+#moon{
+    color: black;
+}
+@media screen and (min-device-width:360px) and  (max-device-width:800px){
+
+}
