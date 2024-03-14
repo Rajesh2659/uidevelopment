@@ -1,0 +1,223 @@
+.d-flex{
+    position: relative;
+    right: 900px;
+    width: 350px;
+}
+.nav-item{
+padding-left: 20px;
+position: relative;
+right: 5px;
+top: 10px;
+}
+.navbar-nav{
+    position: relative;
+    left: 200px;
+    height: 55px;
+}
+header{
+    background-image: url("../nature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.nav-item1,.nav-item2{
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    height: 33px;
+    width: 100px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+
+}
+.nav-item1:hover,.nav-item2:hover{
+    background-color: rgb(230, 220, 182);
+}
+
+.nav-item1{
+    position: relative;
+    right: 12px;
+}
+.nav-item2{
+    position: relative;
+    left: 72px;
+}
+a{
+    position: relative;
+    bottom: 5px;
+    color: white;
+
+}
+.container-fluid{
+    margin-top: 2px;
+ background-color: rgb(4, 67, 21);
+    border: 2px solid white(20, 20, 20);
+    border-radius: 10px;
+    position: relative;
+    bottom: 9px;
+    height: 79px;
+}
+b,.btn{
+    color: white;
+    font-weight: lighter;
+}
+h1,h3{
+    position: relative;
+    right: 90px;
+    text-shadow: 2px 2px 4px white;
+      }
+      h1,h2,.raj{
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+      }
+      body:hover h1,body:hover h2,body:hover .raj{
+        opacity: 1;
+      }
+
+      h3{
+        opacity: 0;
+        transition: opacity 5s ease-in;
+      }
+      body:hover h3{
+        opacity: 1;
+      }
+
+b{
+   font-size: 18px;
+}
+.newbtn{
+    border-radius: 10px;
+    color: white;
+    border:2px solid black;
+    background-color: green;
+}
+.container{
+    position: relative;
+    bottom: 600px;
+}
+
+/* ------------------------    Main one  ------------------------------------- */
+.main-container{
+display: flex;
+
+}
+.carousel-inner{
+    border-radius: 30px;
+}
+h4{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    margin-top: 10px;
+    text-shadow: 2px 5px 5px green;
+}
+.first-row-img{
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+}
+p,small{
+    margin-left: 10px;
+    color: rgb(169, 163, 163);
+}
+small{
+    color: brown;
+}
+h2{
+    position:relative;
+    left: 10px;
+    bottom: 130px;
+    text-align: center;
+    text-shadow: 5px 19px 20px green;
+    font-style: oblique;
+}
+.plant-text{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    bottom: 150px;
+}
+  body:hover .carousel-item ,small,.card-body {
+    -webkit-animation: myfirst 5s normal;
+    animation: myfirst 5s normal;
+    -webkit-animation-duration: 5s;
+    animation-duration:5s;
+    animation-direction: normal;
+    -webkit-animation-direction: normal;
+
+  }
+  @-webkit-keyframes myfirst {
+    0% {
+        left:-100%;
+    }
+    100% {
+        left:0%;
+    }
+}
+@keyframes myfirst {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+.carousel-item,small,.card-body{
+    opacity: 0;
+    transition: opacity 4s ease-in;
+  }
+  body:hover .carousel-item,small,.card-body {
+    opacity: 1;
+  }
+
+
+  
+  
+  /* Sir Css file */
+  
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item{
+
+    margin-right: 15px;
+}
+
+.text-white{
+    color: white;
+}
+
+
+.card-conatiner{
+    display: flex;
+}
+
+.cards-space{
+    margin-right: 22px;
+}
+h4>a{
+    color: black;
+    text-decoration: dashed;
+}
+.card-body{
+    background-color: rgb(208, 231, 224);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+@media screen and (min-width:375px) and (max-width:667px){
+    
+    .card-conatiner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 10px;
+    }
+}
