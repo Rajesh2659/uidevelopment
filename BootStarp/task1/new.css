@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    column-gap: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+.home-class{
+    text-decoration: none;
+    font-size: 25px;
+    justify-items: end;
+    margin-left: 100px;
+}
+.home-class:hover{
+    color: green;
+    border: 2px solid green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid red;
+}
+header{
+    background-image: url("../nature.png");
+    height: 100vh;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: orange;
+}

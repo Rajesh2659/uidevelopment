@@ -1,0 +1,81 @@
+.main-one{
+    border: 2px solid red;
+    padding: 10px;
+    display: flex;
+
+    border-radius: 10px;
+
+}
+.div1,.div2,.div3,.div4,.div5{
+    width: 20%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.main-container{
+    margin-top: 20px;
+    border: 3px solid blue;
+    height:70px;
+    border-radius: 10px ;
+    display: flex;
+   
+}
+.div11,.div12,.div13,.div14,.div15,.div16{
+    width: 17%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+#frm,#to,#fr1,#to1{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: whitesmoke;
+    
+}
+#frm:hover,#to:hover{
+    color: red;
+    border-top: whitesmoke;
+    border-left: whitesmoke;
+    border-right: whitesmoke;
+    font-size: 15px;
+}
+#btn,#btn1{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: green;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+#btn:hover{
+    background-color: bisque;
+    color: black;
+
+}
+#arr,#dep,#arr1,#dep1{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.div11{
+    color: rgb(6, 6, 6); 
+}
+body{
+      background-image: url("./train.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(209, 201, 201, 0.5);
+}
+
+.rajesh{
+    background-color:rgba(104, 102, 102, 0.5);
+}

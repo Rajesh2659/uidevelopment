@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/82b31863da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>User Details</legend>
+        <div class="UserName">
+          <label for="">UserName:</label>
+          <input
+            type="email"
+            id="email"
+            class="u_name"
+            placeholder="Enter Email Id"
+          />
+          <i class="fa-regular fa-envelope"></i>
+          <br />
+          <br />
+          <mark id="par1"></mark>
+        </div>
+
+        <div class="pswd">
+          <label for="">password:</label>
+          <input
+            type="password"
+            id="password"
+            class="p_wd"
+            placeholder="Enter password"
+            id="password"
+          />
+          <i
+            class="fa-solid fa-eye-slash"
+            id="password-icon"
+            onClick="functionPassword()"
+          ></i>
+          <br />
+          <br />
+          <mark id="par2"></mark>
+        </div>
+
+        <button class="btn" onClick="validateDetails()">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+      </fieldset>
+    </div>
+    <script src="./new.js"></script>
+  </body>
+</html>
