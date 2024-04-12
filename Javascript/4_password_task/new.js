@@ -56,8 +56,8 @@ function validateDetails() {
 
     if (filteredUser) {
     //   console.log(filteredUser);
-    document.getElementById("par1").innerHTML="Details are matching"
+    window.location.href = "newpage.html"; 
     } else {
-        document.getElementById("par2").innerHTML="Details are not matching"
+        document.getElementById("par2").innerHTML="Invalid Email or password"
     }
   }

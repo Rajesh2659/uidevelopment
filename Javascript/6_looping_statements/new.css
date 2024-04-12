@@ -1,0 +1,103 @@
+.bus-nav{
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+   
+}
+.bus-nav-bar1{
+    width: 12.5%;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+    
+}
+.bus-nav-bar1>b{
+color: gray;
+font-size: 15px;
+}
+.bus-nav-bar2{
+    width: 12.5%;
+    
+}
+.bus-nav-bar3{
+    width: 12.5%;
+    color: gray;
+    
+}
+.bus-nav-bar4{
+    width: 12.5%;
+    color: gray;
+}
+.bus-nav-bar5{
+    width: 12.5%;
+    color: gray;
+}
+.bus-nav-bar6{
+    width: 12.5%;
+    color: gray;
+}
+.bus-nav-bar7{
+    width: 12.5%;
+    color: gray;
+}
+.bus-nav-bar8{
+    width: 12.5%;
+    color: gray;
+}
+
+/* bus state */
+.bus-state{
+    display: flex;
+    margin-top: 50px;
+    border: 2px solid  rgb(240, 194, 194);
+    background-color: rgb(236, 207, 207);
+   
+    border-radius: 10px;
+    padding: 15px;
+}
+.img1{
+    border: 2px solid whitesmoke;
+    background-color: black;
+    margin-left: 60px;
+    opacity: 0.7;
+
+}
+.bus-1{
+width: 20%;
+}
+.bus-2{
+    width: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    }
+    .bus-3{
+        width: 20%;
+        }
+        .bus-4{
+            width: 20%;
+            }
+            .bus-5{
+                width: 20%;
+
+                }
+                .btn-1{
+                    background-color: red;
+                    color: white;
+                    border: 2px solid red;
+                    width: 150px;
+                    position: relative;
+                    top: 23px;
+                    padding:8px;
+                }
+                small{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                #bus6 {
+                    border: 2px solid red;
+                    color: white;
+                    width: 40px;
+                    height: 25px;
+                    background-color: red;
+                }
+                

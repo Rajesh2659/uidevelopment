@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="dateStr"></p>
+
+    <script>
+      let str =
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+      let str2 = new String(
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      );
+
+      //document.write(str2.length);
+
+      // console.log(str2.indexOf("Ipsum"));
+
+      // console.log(str2.lastIndexOf("Lorem"));
+
+      // console.log(str2.slice(15, 21));
+
+      //console.log(str2.substr(10, 6));
+
+      //console.log(str2.substr(15, 8).toUpperCase());
+
+      // console.log(str2.substr(15, 6).toLowerCase());
+
+      //const str3 = "simply";
+
+      //const str4 = "industry";
+
+      //   let result = str3 + " " + str4;
+
+      //   console.log(result);+
+
+      //   result = str3.concat(" ", str4);
+
+      //   console.log(result);
+
+      // console.log(str.charAt(1));
+
+      //   let mobileNo = "9032345290";
+
+      //   let formattedMobileNo = `+91 ${mobileNo.charAt(0)}${mobileNo.charAt(
+      //     1
+      //   )}${mobileNo.charAt(2)} ${mobileNo.charAt(4)}`;
+
+      //   let formattedStr = `${str3.charAt(0)}${str3.charAt(1)}${str3.charAt(
+      //     2
+      //   )} ${str3.charAt(3)}${str3.charAt(4)}${str3.charAt(5)} ${str4}`;
+
+      //   console.log(formattedStr);
+
+      //----------------------------------------------------------------------------------------------
+      // date Formats
+
+      const currentDateObj = new Date();
+
+      //   document.getElementById("dateStr").innerHTML = currentDateObj;
+
+      //   // console.log(currentDateObj.getDate(), currentDateObj.getMonth(), currentDateObj.getFullYear(), currentDateObj.getDay(), currentDateObj.getMinutes(), currentDateObj.getSeconds(), currentDateObj.getHours());
+
+      // currentDateObj.setHours(10);
+
+      //   console.log(currentDateObj.toISOString());
+
+      //   const modifiedDateObj = new Date("2024-04-05T05:13:51.335Z");
+
+      //   const dateStr = `${
+      //     modifiedDateObj.getDate().toString().length === 1
+      //       ? "0" + modifiedDateObj.getDate()
+      //       : modifiedDateObj.getDate()
+      //   }/${modifiedDateObj.getMonth() + 1}/${modifiedDateObj.getFullYear()}`;
+
+      //   console.log(dateStr);
+
+      //   document.getElementById("dateStr").innerHTML = dateStr;
+
+      //------------------------------ Get Duration------------------------------------
+
+      const date1 = "2024-04-01T12:00:00";
+      const date2 = "2024-04-01T05:00:00";
+
+      const date1Obj = new Date(date1);
+      const date2Obj = new Date(date2);
+
+      diff = Math.abs(date2Obj - date1Obj);
+
+      console.log(diff);
+
+      diff = diff / (1000 * 60 * 60);
+
+      console.log(diff);
+    </script>
+  </body>
+</html>

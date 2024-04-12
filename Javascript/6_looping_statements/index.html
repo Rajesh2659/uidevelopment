@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./new.css" />
+  </head>
+  <body>
+    <!-- ---------------  Bus Headings -->
+    <div class="row">
+      <div class="bus-nav">
+        <div class="bus-nav-bar1">Buses <b>found</b></div>
+        <div class="bus-nav-bar2"><b>SORT BY:</b></div>
+        <div class="bus-nav-bar3">Deparature</div>
+        <div class="bus-nav-bar4">Duration</div>
+        <div class="bus-nav-bar5">Arrival</div>
+        <div class="bus-nav-bar6">Ratings</div>
+        <div class="bus-nav-bar7">Fare</div>
+        <div class="bus-nav-bar7">Seats Available</div>
+      </div>
+    </div>
+
+    <!-- ------------ Apsrtc buses -->
+
+    <div class="row">
+      <div class="bus-state">
+        <div class="bus-1">
+          <img class="img1" src="./ap.webp" alt="" width="65px" />
+        </div>
+        <div class="bus-2">APSRTC BUSES</div>
+        <div class="bus-3">Get up to <small>Rs 250 off</small> on APSRTC</div>
+        <div class="bus-4"><small>64 Buses</small></div>
+        <div class="bus-5">
+          From <small>INR 412</small><br /><button
+            class="btn-1"
+            onclick="openBuses()"
+          >
+            View Buses <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--  iterations from javascript -->
+
+    <div id="error"></div>
+
+    <!-- -------------  tsrtc buses -->
+    <div class="row">
+      <div class="bus-state">
+        <div class="bus-1">
+          <img class="img1" src="./tsrtc.webp" alt="" width="65px" />
+        </div>
+        <div class="bus-2">TSRTC BUSES</div>
+        <div class="bus-3">Get up to <small>Rs 250 off</small> on TSRTC</div>
+        <div class="bus-4"><small>44 Buses</small></div>
+        <div class="bus-5">
+          From <small>INR 450</small><br /><button
+            class="btn-1"
+            onclick="openBuses()"
+          >
+            View Buses <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------  Ksrtc buses -->
+    <div class="row">
+      <div class="bus-state">
+        <div class="bus-1">
+          <img class="img1" src="./kstrc.webp" alt="" width="65px" />
+        </div>
+        <div class="bus-2">KSRTC BUSES</div>
+        <div class="bus-3">Get up to <small>Rs 250 off</small> on KARTC</div>
+        <div class="bus-4"><small>74 Buses</small></div>
+        <div class="bus-5">
+          From <small>INR 650</small><br /><button
+            class="btn-1"
+            onclick="openBuses()"
+          >
+            View Buses <i class="fa-solid fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

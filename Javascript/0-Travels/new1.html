@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        border: 0.5px solid rgb(235, 234, 234);
+        border-radius: 1px;
+        height: 500px;
+        width: 430px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        box-shadow: 10px 20px 15px gainsboro;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .sub-container {
+        display: flex;
+      }
+      .sub1 {
+        width: 50%;
+        color: red;
+        border: none;
+        background-color: white;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: normal;
+      }
+
+      .sub2 {
+        width: 50%;
+        color: red;
+        border: none;
+        background-color: white;
+        margin-left: 5px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: normal;
+      }
+      a {
+        text-decoration: none;
+        font-size: 18px;
+      }
+      li {
+        list-style: none;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: left;
+        color: black;
+      }
+      .over-flow {
+        border: 2ps solid green;
+        height: 400px;
+        width: 430px;
+        overflow: auto;
+      }
+      input {
+        height: 15px;
+        width: 15px;
+        font-weight: bolder;
+        color: black;
+      }
+      span {
+        font-size: 18px;
+      }
+      #mon {
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+      }
+      .tue {
+        font-weight: lighter;
+        position: relative;
+        left: 50px;
+      }
+      .wed {
+        font-weight: lighter;
+        color: grey;
+        position: relative;
+        left: 140px;
+        bottom: 37px;
+      }
+      .sub1:hover,
+      .sub2:hover {
+        border: 3px solid red;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid red;
+      }
+
+      .btns {
+        width: 85%;
+        height: 35px;
+        border-radius: 2px;
+        background-color: rgb(197, 57, 57);
+        position: relative;
+        bottom: 30px;
+        border: 2px solid red;
+        font-size: 18px;
+        color: rgb(222, 218, 218);
+        font-weight: bold;
+      }
+      a {
+        color: black;
+        font-size: 23px;
+        position: relative;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      Select the boarding and dropping point
+      <hr />
+
+      <div class="sub-container">
+        <button class="sub1" onclick=" callDetails()">BOARDING POINT</button>
+
+        <button class="sub2" onclick=" callDetails()">DROPING POINT</button>
+      </div>
+      <hr />
+
+      <div class="over-flow">
+        <ul>
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio1" class="mon"> </a>
+            <span href="" id="radio11" class="tue"></span>
+            <span href="" id="radio21" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio2" class="mon"></a>
+            <span href="" id="radio12" class="tue"></span>
+            <span href="" id="radio22" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio3" class="mon"></a>
+            <span href="" id="radio13" class="tue"></span>
+            <span href="" id="radio23" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio4" class="mon"></a>
+            <span href="" id="radio14" class="tue"> </span>
+            <span href="" id="radio24" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio5" class="mon"></a>
+            <span href="" id="radio15" class="tue"></span>
+            <span href="" id="radio25" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio6" class="mon"></a>
+            <span href="" id="radio16" class="tue"></span>
+            <span href="" id="radio26" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio7" class="mon"></a>
+            <span href="" id="radio17" class="tue"></span>
+            <span href="" id="radio27" class="wed"></span>
+          </li>
+
+          <li>
+            <input name="raj1" type="radio" />
+            <a href="" id="radio8" class="mon"></a>
+            <span href="" id="radio18" class="tue"></span>
+            <span href="" id="radio28" class="wed"></span>
+          </li>
+        </ul>
+      </div>
+      <button class="btns">View Seats</button>
+    </div>
+
+    <script>
+      var boardingDetails = [
+        {
+          time: "22:30",
+          place: "IBRAHIMPATNAM-VJA",
+          stop: "IBRAHIMPATNAM",
+        },
+        {
+          time: "21:30",
+          place: "GUNTAPALLI-VIJAY",
+          stop: "GUNTUPALLI-CBS",
+        },
+
+        {
+          time: "22:45",
+          place: "GOLLAAPUDI-VIJAY",
+          stop: "GOLLAAPUDI-CBS",
+        },
+
+        {
+          time: "22:35",
+          place: "GOLLAPUDI ONE CENTRE",
+          stop: "ANDRA-HOSPITAL",
+        },
+      ];
+
+      function callDetails() {
+        document.getElementById("radio1").innerHTML = boardingDetails[0].time;
+        document.getElementById("radio11").innerHTML = boardingDetails[0].place;
+        document.getElementById("radio21").innerHTML = boardingDetails[0].stop;
+        // boarding 2 details
+        document.getElementById("radio2").innerHTML = boardingDetails[1].time;
+        document.getElementById("radio12").innerHTML = boardingDetails[1].place;
+        document.getElementById("radio22").innerHTML = boardingDetails[1].stop;
+
+        // boarding 3 details
+        document.getElementById("radio3").innerHTML = boardingDetails[2].time;
+        document.getElementById("radio13").innerHTML = boardingDetails[2].place;
+        document.getElementById("radio23").innerHTML = boardingDetails[2].stop;
+
+        // boarding 4 details
+        document.getElementById("radio4").innerHTML = boardingDetails[3].time;
+        document.getElementById("radio14").innerHTML = boardingDetails[3].place;
+        document.getElementById("radio24").innerHTML = boardingDetails[3].stop;
+
+        // boarding 5 details
+        document.getElementById("radio5").innerHTML = boardingDetails[0].time;
+        document.getElementById("radio15").innerHTML = boardingDetails[0].place;
+        document.getElementById("radio25").innerHTML = boardingDetails[0].stop;
+
+        // boarding 6 details
+        document.getElementById("radio6").innerHTML = boardingDetails[1].time;
+        document.getElementById("radio16").innerHTML = boardingDetails[1].place;
+        document.getElementById("radio26").innerHTML = boardingDetails[1].stop;
+
+        // boarding 7 details
+        document.getElementById("radio7").innerHTML = boardingDetails[2].time;
+        document.getElementById("radio17").innerHTML = boardingDetails[2].place;
+        document.getElementById("radio27").innerHTML = boardingDetails[2].stop;
+
+        // boarding 8 details
+        document.getElementById("radio8").innerHTML = boardingDetails[3].time;
+        document.getElementById("radio18").innerHTML = boardingDetails[3].place;
+        document.getElementById("radio28").innerHTML = boardingDetails[3].stop;
+      }
+    </script>
+  </body>
+</html>

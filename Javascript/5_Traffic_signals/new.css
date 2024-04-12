@@ -1,0 +1,51 @@
+ .outerdiv{
+    border: 2px solid black;
+    width: 150px;
+    height: 380px;
+} 
+.btn{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#redcolor{
+    background-color: red;
+    padding: 5px;
+    border: none;
+}
+#orangecolor{
+    background-color: orange;
+    padding: 5px;
+    border: none;
+}
+#greencolor{
+    background-color: green;
+    padding: 5px;
+    border: none;
+}
+#red{
+margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius:50%;
+    
+}
+#orange{
+    margin-left: 20px;
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius:50%;
+        
+    }
+    #green{
+        margin-left: 20px;
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius:50%;
+            
+        }

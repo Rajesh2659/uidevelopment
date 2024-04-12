@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/82b31863da.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- --------- main nav --------------- -->
+    <div class="row">
+      <div class="bus-nav">
+        <div class="bus-nav-bar1">Buses <b>found</b></div>
+        <div class="bus-nav-bar2"><b>SORT BY:</b></div>
+        <div class="bus-nav-bar3">Deparature</div>
+        <div class="bus-nav-bar4">Duration</div>
+        <div class="bus-nav-bar5">Arrival</div>
+        <div class="bus-nav-bar6">Ratings</div>
+        <div class="bus-nav-bar7">Fare</div>
+        <div class="bus-nav-bar7">Seats Available</div>
+      </div>
+    </div>
+
+    <!-- --------- Apstrc --------------- -->
+    <div class="row">
+      <div class="bus-state">
+        <div class="bus-1"><img class="img1"  src="./ap.webp" alt="" width="65px"></div>
+        <div class="bus-2">APSRTC BUSES</div>
+        <div class="bus-3">Get up to <small>Rs 250 off</small> on APSRTC</div>
+        <div class="bus-4"><small>64 Buses</small></div>
+        <div class="bus-5">From <small>INR 412</small><br><button class="btn-1" onclick="openBuses()">View Buses <i class="fa-solid fa-angle-down"></i> </button></div>
+      </div>
+    </div>
+    
+
+    
+
+    <!-- Details 1 -->
+
+    
+      <div class="row">
+        <div id="bus-nav">
+          <div id="rajesh">
+
+            <div class="bus-nav-bar1" id="bus1"></div>
+            <div class="bus-nav-bar2" id="bus2"></div>
+            <div class="bus-nav-bar3" id="bus3"></div>
+            <div class="bus-nav-bar4" id="bus4"></div>
+            <div class="bus-nav-bar5" id="bus5"></div>
+            <div class="bus-nav-bar6" id="bus6"></div>
+            <div class="bus-nav-bar7" id="bus7"></div>
+            <div class="bus-nav-bar8" id="bus8"></div>
+            <div class="bus-nav-bar9" id="bus9"><br><br><button  class="btn2" onclick="viewSeats()" >vew Seats </button></div>
+            
+          </div>
+        </div>
+      </div>
+
+
+          <!-- Boarding Details -->
+          <div class="main-container" id="kyc">
+            Select the boarding and dropping point
+            <hr />
+      
+            <div class="sub-container">
+              <button class="sub1" onClick=" callDetails()">BOARDING POINT</button>
+      
+              <button class="sub2" onClick=" callDetails() ">DROPING POINT</button>
+            </div>
+            <hr />
+      
+            <div class="over-flow">
+              <ul>
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio1" class="mon"> </a>
+                  <span href="" id="radio11" class="tue"></span>
+                  <span href="" id="radio21" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio2" class="mon"></a>
+                  <span href="" id="radio12" class="tue"></span>
+                  <span href="" id="radio22" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio3" class="mon"></a>
+                  <span href="" id="radio13" class="tue"></span>
+                  <span href="" id="radio23" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio4" class="mon"></a>
+                  <span href="" id="radio14" class="tue"> </span>
+                  <span href="" id="radio24" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio5" class="mon"></a>
+                  <span href="" id="radio15" class="tue"></span>
+                  <span href="" id="radio25" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio6" class="mon"></a>
+                  <span href="" id="radio16" class="tue"></span>
+                  <span href="" id="radio26" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio7" class="mon"></a>
+                  <span href="" id="radio17" class="tue"></span>
+                  <span href="" id="radio27" class="wed"></span>
+                </li>
+      
+                <li>
+                  <input name="raj1" type="radio" />
+                  <a href="" id="radio8" class="mon"></a>
+                  <span href="" id="radio18" class="tue"></span>
+                  <span href="" id="radio28" class="wed"></span>
+                </li>
+
+              </ul>
+
+              </div>
+                <button class="btns">View Seats</button>
+              </div>
+        </div> 
+      </div>
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+      <!-- --------- Tsrtrc --------------- -->
+     <div class="row">
+      <div class="bus-state">
+        <div class="bus-1"><img class="img1"  src="./tsrtc.webp" alt="" width="65px"></div>
+        <div class="bus-2">TSRTC BUSES</div>
+        <div class="bus-3">Get up to <small>Rs 250 off</small> on TSRTC</div>
+        <div class="bus-4"><small>82 Buses</small></div>
+        <div class="bus-5">From <small>INR 450</small><br><button class="btn-1" onclick="openBuses1()">View Buses <i class="fa-solid fa-angle-down"></i> </button></div>
+      </div>
+    </div>
+    
+
+       <div class="row">
+        <div id="bus-nav1">
+            <div id="rajesh1">
+            <div class="bus-nav-bar1" id="bus11"></div>
+            <div class="bus-nav-bar2" id="bus12"></div>
+            <div class="bus-nav-bar3" id="bus13"></div>
+            <div class="bus-nav-bar4" id="bus14"></div>
+            <div class="bus-nav-bar5" id="bus15"></div>
+            <div class="bus-nav-bar6" id="bus16"></div>
+            <div class="bus-nav-bar7" id="bus17"></div>
+            <div class="bus-nav-bar8" id="bus18"></div>
+            <div class="bus-nav-bar9" id="bus9"><br><br><button class="btn2">vew Seats</button></div>
+          </div> 
+        </div> 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./new.js"></script>
+  </body>
+</html>
