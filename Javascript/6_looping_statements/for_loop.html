@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mainv"></div>
+    <script>
+      const users = [
+        {
+          id: 1,
+          name: "ram",
+          email: "ram@gmail.com",
+          mobileno: 8465363377,
+          password: "ram@123",
+        },
+        {
+          id: 2,
+          name: "sam",
+          email: "sam@gmail.com",
+          mobileno: 9315363377,
+          password: "sam@123",
+        },
+        {
+          id: 3,
+          name: "jam",
+          email: "jam@gmail.com",
+          mobileno: 846222377,
+          password: "jam@123",
+        },
+        {
+          id: 4,
+          name: "prem",
+          email: "prem@gmail.com",
+          mobileno: 822263377,
+          password: "prem@123",
+        },
+        {
+          id: 5,
+          name: "karthik",
+          email: "karthik@gmail.com",
+          mobileno: 842233377,
+          password: "karthik@123",
+        },
+      ];
+
+      for (i = 0; i < users.length; i++) {
+        for (let propertyName in users[i]) {
+          //   document.write(propertyName, " ", users[i][propertyName]);
+
+          const coursesDiv = document.getElementById("mainv");
+          const h3 = document.createElement("h3");
+          h3.innerHTML = users[i];
+          coursesDiv.appendChild(h3);
+        }
+      }
+    </script>
+  </body>
+</html>

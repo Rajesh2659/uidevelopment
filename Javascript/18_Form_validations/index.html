@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <form validate>
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Full Name</span>
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              id="fullName"
+              onkeyup="validateFullName()"
+            />
+            <p id="fullNameErrorMessage" class="errorMessage"></p>
+          </div>
+
+          <div class="input__box">
+            <span class="details">Last Name</span>
+            <input
+              type="text"
+              placeholder="Last Name"
+              required
+              id="LastName"
+              onkeyup="validateLastName()"
+            />
+            <p id="LastNameErrorMessage" class="errorMessage"></p>
+          </div>
+
+          <div class="input__box">
+            <span class="details"> Select Country </span>
+            <select>
+              <option value="">Select</option>
+              <option value="">UK</option>
+              <option value="">USA</option>
+              <option value="">Germany</option>
+              <option value="">Dubai</option>
+            </select>
+
+            <p id="fullNameErrorMessage" class="errorMessage"></p>
+          </div>
+
+          <div class="input__box">
+            <span class="details">Username</span>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              required
+              id="username"
+              onkeyup="validateUsername()"
+            />
+            <p id="usernameErrorMessage" class="errorMessage"></p>
+          </div>
+          <div class="input__box">
+            <span class="details">Email</span>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              required
+              id="email"
+              onkeyup="validateEmail()"
+            />
+            <p id="emailErrorMessage" class="errorMessage"></p>
+          </div>
+          <div class="input__box">
+            <span class="details">Phone Number</span>
+            <input
+              type="tel"
+              placeholder="Enter MobileNumber"
+              required
+              id="phoneNumber"
+              onkeyup="validatePhoneNumber()"
+            />
+            <p id="phoneNumberErrorMessage" class="errorMessage"></p>
+          </div>
+          <div class="input__box">
+            <span class="details">Password</span>
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              id="password"
+              onkeyup="validatePassword()"
+            />
+            <p id="passwordErrorMessage" class="errorMessage"></p>
+          </div>
+          <div class="input__box">
+            <span class="details">Confirm Password</span>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              required
+              id="confirmPassword"
+              onkeyup="validateConfirmPassword()"
+            />
+            <p id="confirmPasswordErrorMessage" class="errorMessage"></p>
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register" onsubmit="validateUser()" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

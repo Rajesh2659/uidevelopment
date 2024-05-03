@@ -21,17 +21,9 @@ function functionPassword(){
 function validateDetails() {
     const users = [
       {
-        email: "denaboina2659@gmail.com",
-        password: "rajesh",
-      },
-      {
-        email: "lokesh@gmail.com",
-        password: "lokesh",
-      },
-      {
-        email: "arun@gmail.com",
-        password: "arun",
-      },
+        email: "admin",
+        password: "admin",
+      }
     ];
 
     const enteredEmail = document.getElementById("email").value;
@@ -42,22 +34,15 @@ function validateDetails() {
       users[0].password === enteredPassword
     ) {
       filteredUser = users[0];
-    } else if (
-      users[1].email === enteredEmail &&
-      users[1].password === enteredPassword
-    ) {
-      filteredUser = users[1];
-    } else if (
-      users[2].email === enteredEmail &&
-      users[2].password === enteredPassword
-    ) {
-      filteredUser = users[2];
-    }
+    } 
 
     if (filteredUser) {
     //   console.log(filteredUser);
-    window.location.href = "newpage.html"; 
+    window.location.href = "./lead.html"; 
     } else {
         document.getElementById("par2").innerHTML="Invalid Email or password"
     }
+  }
+  function enterDetails(){
+    document.getElementById("par2").innerHTML=""
   }

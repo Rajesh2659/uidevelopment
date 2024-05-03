@@ -11,6 +11,7 @@
     ></script>
   </head>
   <body>
+    <img class="img-move" src="./digitallync.webp" alt="" width :100px />
     <div class="container">
       <fieldset>
         <legend>User Details</legend>
@@ -22,6 +23,7 @@
             id="email"
             class="u_name"
             placeholder="Enter Email Id"
+            onkeyup="enterDetails()"
           />
           <i class="fa-regular fa-envelope"></i>
           <br />
@@ -30,13 +32,14 @@
         </div>
 
         <div class="pswd">
-          <label for="">password:</label>
+          <label for="">Password :</label>
           <input
             type="password"
             id="password"
             class="p_wd"
             placeholder="Enter password"
             id="password"
+            onkeyup="enterDetails()"
           />
           <i
             class="fa-solid fa-eye-slash"
@@ -47,9 +50,15 @@
           <br />
         </div>
 
-        <button class="btn" onClick="validateDetails()">
-          <i class="fa-solid fa-right-to-bracket"></i> Login
-        </button>
+        <button class="btn" onClick="validateDetails()">Login</button>
+        <!-- <i class="fa-solid fa-right-to-bracket"></i>  -->
+
+        <div>
+          <small>Remember me</small>
+          <input class="check" type="checkbox" id="checkbox" name="raj" />
+        </div>
+        <hr class="line" />
+        <a class="fp" href="">Forgot Password?</a>
       </fieldset>
     </div>
 

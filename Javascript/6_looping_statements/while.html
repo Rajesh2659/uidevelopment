@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 100px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="deleteAll()">Delete All</button>
+    <button onclick="addAll()">Add All</button>
+    <div id="container">
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+      <p>meta name=viewport content=width=device-width, initial-scale=1.0</p>
+    </div>
+
+    <script>
+      function deleteAll() {
+        const container = document.getElementById("container");
+        while (container.firstChild) {
+          container.removeChild(container.lastChild);
+        }
+      }
+    </script>
+  </body>
+</html>

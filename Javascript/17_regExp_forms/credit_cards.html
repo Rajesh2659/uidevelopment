@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+        border-radius: 10px;
+      }
+      button {
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        placeholder="Enter Credit Card No"
+        id="creditCardNo"
+        onkeyup="validate()"
+      />
+      <i class="fa-brands" id="creditCardIcon"></i>
+    </div>
+    <button onclick="validate()">Validate</button>
+
+    <script>
+      let className = "";
+      function validate() {
+        const creditCardNo = +document.getElementById("creditCardNo").value;
+        const creditCardIcon = document.getElementById("creditCardIcon");
+        // American Express
+        if (/^(?:3[47][0-9]{13})$/.test(creditCardNo)) {
+          className = "fa-cc-amex";
+          creditCardIcon.classList.add(className);
+        }
+        // Visa
+        else if (/^(?:4[0-9]{12}(?:[0-9]{3})?)$/.test(creditCardNo)) {
+          className = "fa-cc-visa";
+          creditCardIcon.classList.add(className);
+        }
+        // Jcb
+        else if (/^(?:2131|1800)\d{11}$/.test(creditCardNo)) {
+          className = "fa-cc-jcb";
+          creditCardIcon.classList.add(className);
+        }
+        // Master Card
+        else if (/^(?:5[1-5][0-9]{14})$/.test(creditCardNo)) {
+          className = "fa-cc-mastercard";
+          creditCardIcon.classList.add(className);
+        } else if (className.length > 0) {
+          creditCardIcon.classList.remove(className);
+        }
+      }
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/cf2f23d462.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

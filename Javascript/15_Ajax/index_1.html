@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        padding: 15px;
+        width: 20.9%;
+        margin: 20px;
+        /* 5px rounded corners */
+      }
+
+      /* Add rounded corners to the top left and the top right corner of the image */
+      img {
+        border-radius: 5px 5px 0 0;
+        height: 200px;
+      }
+
+      #users {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="newuser"></p>
+
+    <script>
+      function fetchAllUsers() {
+        const httpRequest = XMLHttpRequest();
+        httpRequest.changeDetails = function () {
+          if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+            const usersDiv = document.getElementById("newuser");
+            let str = "";
+          }
+          for (i = 0; i < usersDiv.length; i++) {}
+        };
+      }
+    </script>
+  </body>
+</html>

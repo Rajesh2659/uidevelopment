@@ -1,20 +1,20 @@
 
 fieldset{
     margin-top: 10px;
-    height: 400px;
+    height: 500px;
     width: 500px;
     font-size: 25px;
     margin-top: 50px;
     text-align: center;
-   margin-left: 5%;
+   margin-left: 30%;
    border-radius: 20px;
 
 }
-body{
+/* body{
     background-image: url("./bac.webp");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 label,input{
     margin-top:40px;
 
@@ -22,29 +22,30 @@ label,input{
 input{
     border: 2px solid rgb(14, 15, 14);
     padding: 15px;
-    width: 200px;
+    width: 230px;
     border-radius: 20px;
     margin-left: 10px;
-    background-color: rgb(248, 238, 238);
+    background-color:white;
     
     
 }
 
 .btn{
     margin-top: 30px;
-    width: 120px;
+    width: 420px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: bold;
+    font-size: 17px;
     color: white;
-    background-color: red;
+    background-color: blue;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: orangered;
 }
  .btn:hover{
-    background-color: green;
+    background-color: blue;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -69,4 +70,30 @@ input{
     color:red;
     font-size: 25px;
     text-align: center;
+}
+.img-move{
+    position: relative;
+    left: 580px;
+    margin-top: 10px;
+}
+.check{
+    position: relative;
+    right: 200px;
+}
+small{
+    font-size: 18px;
+    position: relative;
+    left: 50px;
+}
+.fp{
+    font-size: 18px;
+    position: relative;
+    right: 150px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: blue;
+}
+.line{
+    color:rgb(238, 33, 33);
+    font-size: larger;
 }
