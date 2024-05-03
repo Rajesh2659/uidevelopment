@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.bgimage{
+    background-image: url("https://preview.colorlib.com/theme/charitee/assets/img/hero/h1_hero1.jpg.webp");
+    background-size: cover;
+    width:100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    
+}
+h1 {
+    color: white;
+    font-size: 60px;
+    width: 400px;
+    
+}
+p{
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    text-align-last:left;
+
+
+}
+.move-headings{
+    margin-left: 130px;
+    position: absolute;
+    top: 150px;
+    
+}
+ #anchor{
+    text-decoration: none;
+    padding: 20px;
+    width: 210px;
+    color: white;
+    background-color: #65c9bb;
+    font-weight: bold;
+
+}
+#anchor:hover{
+    border: 2px solid white;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
+
+  .btn-1 {
+    background-color: #f15b43;
+    color: white;
+    padding: 19px;
+    border: none;
+    width: 190px;
+  }
+  .btn-1:hover {
+    background-color: white;
+    color: #f15b43;
+    border: 2px solid #f15b43;
+  }
+  .btn-2 {
+    border: 2px solid #f15b43;
+    color: #f15b43;
+    padding: 17px;
+    background-color: #fcf2eb;
+    width: 190px;
+    margin-left: 40px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .main-container {
+    background-color: #fcf2eb;
+    padding: 50px;
+    
+   
+  }
+  .size-line {
+    font-size: 18px;
+    width: 400px;
+    color: #000;
+  }
+  .upcoming {
+    color: #6bcbbe;
+    
+  }
+  span {
+    font-weight: bold;
+  }
+  #nav-line ul{
+    display: flex;
+    column-gap: 50px;
+   margin-left: 130px;
+    font-size: 18px;
+    text-decoration: none;
+   
+    
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  #makedonation{
+   width: 185px;
+   padding: 10px;
+   background-color: #f15b43;
+   
+  }
+   #phn{
+    border-bottom: dotted;
+    color: white;
+
+  }
+  i{
+    color:white;
+    
+  }
+  
+  .main-container{
+    margin-top: 150px;
+  }
+  #nav-container{
+    width:100%;
+    position:fixed;
+    top: 1;
+   padding: 10px;
+
+  }
+.up-arrow i{
+    position: fixed;
+    top: 600px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #65c9bb;
+    border-radius: 50%;
+height: 40px;
+width: 40px;
+text-align: center;
+    cursor: pointer;
+
+}
